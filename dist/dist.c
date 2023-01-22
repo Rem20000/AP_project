@@ -56,6 +56,7 @@ void error()
 }
 
 //
+
 seq_t *load_seq(const char *fname)
 {
   //
@@ -162,12 +163,14 @@ int main(int argc, char **argv)
     return printf("Usage: %s [seq1] [seq2]\n", argv[0]), 1;
   
   //
+ 
   seq_t *s1 = load_seq(argv[1]);
 
   if (!s1)
     error();
 
   //
+  
   seq_t *s2 = load_seq(argv[2]);
 
   if (!s2)
