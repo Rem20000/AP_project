@@ -1,11 +1,10 @@
-set terminal pngcairo font "Arial,12" fontscale 0.8 
-set size 1400, 700
+set terminal pngcairo font "Arial,12" fontscale 1.8 size 1400, 700
 set output 'Courbe_gcc_100.jpg'
 
-set boxwidth 0.9 absolute
-set style fill solid border -1
-set key fixed center center
-set key box
+set boxwidth 0.5
+set style fill solid 
+set key fixed top right
+set key box 
 set style histogram clustered gap 2  title textcolor lt -1 
 set style data histograms
 set grid 
@@ -13,7 +12,7 @@ set grid
 set xtics border in scale 0,0 nomirror rotate by -45  autojustify 
 set xtics   ()
 
-set xrange [ 0: * ] 
+set xrange [ 0 : * ] 
 set xlabel "GCC flags"
 set yrange [ * : * ] 
 set ylabel " ns"
