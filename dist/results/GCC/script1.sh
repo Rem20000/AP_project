@@ -24,6 +24,6 @@ set title 'performances for different flags using GCC compiler'
 
 #tracer les histogrammes en utilisant les données de la deuxième colonne des fichiers.dat
 
-plot 'hamming_gcc_100_-Ofast.dat' using 2:xtic(2) ti "-Ofast" lc rgb '#008000','hammin_gcc_100_-O0.dat' using 2:xtic(2) ti "-O0" lc rgb '#006400', 'hamming_gcc_100_-O1.dat' using 2:xtic(2) ti "-O1" lc rgb '#228B22 ', 'hamming_gcc_100_-O2.dat' using 2:xtic(2) ti "-O3" lc rgb '#00FF00', 'hamming_gcc_100_-O3.dat' using 2:xtic(2) ti "-O3" lc rgb '#32CD32'
+plot 'hamming_gcc_100_-Ofast.dat' using 2:xtic(2) ti "-Ofast" lc rgb '#008080','hammin_gcc_100_-O0.dat' using 2:xtic(2) ti "-O0" lc rgb '#006400', 'hamming_gcc_100_-O1.dat' using 2:xtic(2) ti "-O1" lc rgb '#2E8B57 ', 'hamming_gcc_100_-O2.dat' using 2:xtic(2) ti "-O3" lc rgb '#00FF00', 'hamming_gcc_100_-O3.dat' using 2:xtic(2) ti "-O3" lc rgb '#32CD32'
 
 replot
