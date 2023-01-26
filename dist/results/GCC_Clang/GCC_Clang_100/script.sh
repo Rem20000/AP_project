@@ -11,7 +11,7 @@ set style data histograms
 set grid 
 set key invert samplen 7
 
-set xtics border in scale 0,0 nomirror rotate by -45  autojustify 
+
 
 
 set xrange [ 0 : * ] 
