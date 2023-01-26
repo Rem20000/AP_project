@@ -1,5 +1,5 @@
 set terminal pngcairo font "Arial,12" fontscale 1.8 size 1400, 700
-set output 'Courbe_gcc_100.jpg'
+set output 'Courbe_clang_100.jpg'
 
 set boxwidth 0.7
 set style fill  solid 
@@ -9,8 +9,7 @@ set style histogram clustered gap 2  title textcolor lt -1
 set style data histograms
 set grid 
 
-set xtics border in scale 0,0 nomirror rotate by -45  autojustify 
-set xtics   ()
+
 
 set xrange [ 0 : * ] 
 set xlabel "Clang flags"
