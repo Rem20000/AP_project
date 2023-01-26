@@ -24,6 +24,6 @@ set title 'performances for different levels of optimisation using gcc compiler'
 
 #tracer les histogrammes en utilisant les données de la deuxième colonne des fichiers.dat
 
-plot 'hamming_gcc_100_-Ofast.dat' using 2:xtic(2) ti "-Ofast" lc rgb '#008080','hammin_gcc_100_-O0.dat' using 2:xtic(2) ti "-O0" lc rgb '#006400', 'hamming_gcc_100_-O1.dat' using 2:xtic(2) ti "-O1" lc rgb '#2E8B57 ', 'hamming_gcc_100_-O2.dat' using 2:xtic(2) ti "-O3" lc rgb '#00FF00', 'hamming_gcc_100_-O3.dat' using 2:xtic(2) ti "-O3" lc rgb '#32CD32', 'hamming_gcc_100_-Og.dat' using 2:xtic(2) ti "-Og" lc rgb '#3CB371 '
+plot 'hamming_gcc_100_-Ofast.dat' using 2:xtic(2) ti "-Ofast" lc rgb '#008080','hammin_gcc_100_-O0.dat' using 2:xtic(2) ti "-O0" lc rgb '#006400', 'hamming_gcc_100_-O1.dat' using 2:xtic(2) ti "-O1" lc rgb '#2E8B57 ', 'hamming_gcc_100_-O2.dat' using 2:xtic(2) ti "-O2" lc rgb '#00FF00', 'hamming_gcc_100_-O3.dat' using 2:xtic(2) ti "-O3" lc rgb '#32CD32', 'hamming_gcc_100_-Og.dat' using 2:xtic(2) ti "-Og" lc rgb '#3CB371 '
 
 replot

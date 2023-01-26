@@ -24,7 +24,7 @@ set title 'performances for different levels of optimisation using clang compile
 
 #tracer les histogrammes en utilisant les données de la deuxième colonne des fichiers.dat
 
-plot 'hamming_clang_100_-Ofast.dat' using 2:xtic(2) ti "-Ofast" lc rgb '#8B00FF','hamming_clang_100_-O0.dat' using 2:xtic(2) ti "-O0" lc rgb '#4B0082', 'hamming_clang_100_-O1.dat' using 2:xtic(2) ti "-O1" lc rgb '#9370DB ', 'hamming_clang_100_-O2.dat' using 2:xtic(2) ti "-O3" lc rgb '#DA70D6', 'hamming_clang_100_-O3.dat' using 2:xtic(2) ti "-O3" lc rgb '#8B008B', 'hamming_clang_100_-Og.dat' using 2:xtic(2) ti "-Og" lc rgb 'blue'
+plot 'hamming_clang_100_-Ofast.dat' using 2:xtic(2) ti "-Ofast" lc rgb '#8B00FF','hamming_clang_100_-O0.dat' using 2:xtic(2) ti "-O0" lc rgb '#4B0082', 'hamming_clang_100_-O1.dat' using 2:xtic(2) ti "-O1" lc rgb '#9370DB ', 'hamming_clang_100_-O2.dat' using 2:xtic(2) ti "-O2" lc rgb '#DA70D6', 'hamming_clang_100_-O3.dat' using 2:xtic(2) ti "-O3" lc rgb '#8B008B', 'hamming_clang_100_-Og.dat' using 2:xtic(2) ti "-Og" lc rgb 'blue'
 
 
 replot
