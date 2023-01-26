@@ -7,20 +7,23 @@ CC=clang
 #CC=gcc
 
 
+#Vectorisation 
+#CFLAGS=-Wall -g -Ofast -ftree-vectorize
+#CFLAGS=-Wall -g -O0 -ftree-vectorize
+#CFLAGS=-Wall -g -O1 -ftree-vectorize
+#CFLAGS=-Wall -g -O2 -ftree-vectorize
+#CFLAGS=-Wall -g -O3 -ftree-vectorize
+CFLAGS=-Wall -g -Og -ftree-vectorize
 
-#CFLAGS=-Wall -g -Ofast
-#CFLAGS=-Wall -g -O0
-#CFLAGS=-Wall -g -O1
-#CFLAGS=-Wall -g -O2
-#CFLAGS=-Wall -g -O3
-CFLAGS=-Wall -g -Og
 
+
+##for gcc##
 #OFLAGS=-march=native -Ofast -fopt-info-all=Vect.gcc.optrpt
 
 #for Clang#
 OFLAGS=-march=native
 
-all: genseq dist
+all: genseq Vect
 
 Vect: Vectorization.c
 	$(CC) $(CFLAGS) $(OFLAGS) $< -o $@

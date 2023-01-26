@@ -147,8 +147,8 @@ void release_seq(seq_t *s)
 }
 
 //Vectorization using SSE Instructions 
-u64 hamming(u8 *a, u8 *b, u64 n)
-{
+//u64 hamming(u8 *a, u8 *b, u64 n)
+/*{
     u64 h = 0;
     __m128i vh = _mm_setzero_si128();
     u64 i;
@@ -166,7 +166,23 @@ u64 hamming(u8 *a, u8 *b, u64 n)
         h += __builtin_popcount(a[i] ^ b[i]);
     }
     return h;
+}*/
+
+
+//
+u64 hamming(u8 *a, u8 *b, u64 n)
+{
+  //
+  u64 h = 0;
+
+  //
+  for (u64 i = 0; i < n; i++)
+    h += __builtin_popcount(a[i] ^ b[i]);
+
+  //
+  return h;
 }
+
 
 
 //
