@@ -9,8 +9,6 @@ set style histogram clustered gap 2  title textcolor lt -1
 set style data histograms
 set grid 
 
-set xtics border in scale 0,0 nomirror rotate by -45  autojustify 
-set xtics   ()
 
 set xrange [ 0 : * ] 
 set xlabel "GCC flags"

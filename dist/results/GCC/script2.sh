@@ -9,8 +9,7 @@ set style histogram clustered gap 3  title textcolor lt -1
 set style data histograms
 set grid 
 #set offset -1,0,0,0
-set xtics border in scale 0,0 nomirror rotate by -35  autojustify 
-set xtics   ()
+
 
 set xrange [ 0 : * ] 
 set xlabel " gcc optimisation levels"
