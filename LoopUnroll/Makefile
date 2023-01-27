@@ -1,24 +1,24 @@
 ##for clang compiler##
 
-CC=clang
+#CC=clang
 
 ##(for gcc compiler)
 
-#CC=gcc
+CC=gcc
 
 
 
 #CFLAGS=-Wall -g -Ofast
-CFLAGS=-Wall -g -O0 
+#CFLAGS=-Wall -g -O0 
 #CFLAGS=-Wall -g -O1 
 #CFLAGS=-Wall -g -O2 
-#CFLAGS=-Wall -g -O3 
+CFLAGS=-Wall -g -O3 
 #CFLAGS=-Wall -g -Og  
 
-#OFLAGS=-march=native -Ofast -fopt-info-all=dist.gcc.optrpt
+OFLAGS=-march=native -Ofast -fopt-info-all=dist.gcc.optrpt
 
 #for Clang#
-OFLAGS=-march=native
+#OFLAGS=-march=native
 
 all: genseq dist
 
