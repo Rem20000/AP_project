@@ -1,10 +1,10 @@
 ##for clang compiler##
 
-CC=clang
+#CC=clang
 
 ##(for gcc compiler)
 
-#CC=gcc
+CC=gcc
 
 
 
@@ -15,15 +15,15 @@ CC=clang
 #CFLAGS=-Wall -g -O3
 CFLAGS=-Wall -g -Og
 
-#OFLAGS=-march=native -Ofast -fopt-info-all=dist.gcc.optrpt
+OFLAGS=-march=native -Ofast -fopt-info-all=dist.gcc.optrpt
 
 #for Clang#
-OFLAGS=-march=native
+#OFLAGS=-march=native
 
 all: genseq dist
 
 dist: dist.c
-	$(CC) $(CFLAGS) $(OFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $(OFLAGS) --optimize $< -o $@
 
 genseq: genseq.c
 	$(CC) -march=native $(CFLAGS) -Ofast $< -o $@
