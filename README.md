@@ -18,7 +18,7 @@ sudo apt-get install libomp-dev
 
 ##autres##
 
-sudo apt-get install gcc
+sudo apt-get install uild-essential
 
 
 ##Compilation##
