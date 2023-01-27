@@ -15,10 +15,10 @@ CC=gcc
 #CFLAGS=-Wall -g -O3
 #CFLAGS=-Wall -g -Og
 
-OFLAGS=-march=native -Ofast -fopt-info-all=dist.gcc.optrpt
+OFLAGS=-march=native-funroll-loops -Ofast -fopt-info-all=dist.gcc.optrpt
 
 #for Clang#
-#OFLAGS=-march=native
+#OFLAGS=-march=native-funroll-loops
 
 all: genseq dist
 
