@@ -18,7 +18,7 @@ CFLAGS=-Wall -g -Ofast
 OFLAGS=-march=native -Ofast -fopt-info-all=dist.gcc.optrpt
 
 #for Clang#
-OFLAGS=-march=native
+#OFLAGS=-march=native
 
 all: genseq dist
 
