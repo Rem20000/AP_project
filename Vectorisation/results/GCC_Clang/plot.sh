@@ -26,7 +26,7 @@ set title 'performances for different levels of optimisation using gcc & clang c
 
 
 
-plot 'Vect_gcc_-Ofast.dat' using 2:xtic(2) ti "-Ofast" lc rgb 'orange','Vect_gcc_-O0.dat' using 2:xtic(2) ti "-O0" lc rgb '#CC5500', 'Vect_gcc_-O1.dat' using 2:xtic(2) ti "-O1" lc rgb '#FFB347', 'Vect_gcc_-O2.dat' using 2:xtic(2) ti "-O2" lc rgb '#FFFF66', 'Vect_gcc_-O3.dat' using 2:xtic(2) ti "-O3" lc rgb '#FF4500', 'Vect_gcc_-Og.dat' using 2:xtic(2) ti "-Og" lc rgb '#FF7F50', 'Vect_Clang_-Ofast.dat' using 2:xtic(2) ti "-Ofast" lc rgb '#000000','Vect_Clang_-O0.dat' using 2:xtic(2) ti "-O0" lc rgb '#2F4F4F', 'Vect_Clang_-O1.dat' using 2:xtic(2) ti "-O1" lc rgb '#777777', 'Vect_Clang_-O2.dat' using 2:xtic(2) ti "-O2" lc rgb '#BBBBBB', 'Vect_Clang_-O3.dat' using 2:xtic(2) ti "-O3" lc rgb '#333333', 'Vect_Clang_-Og.dat' using 2:xtic(2) ti "-Og" lc rgb '#f5f5f5#777777#000000'
+plot 'Vect_gcc_-Ofast.dat' using 2:xtic(2) ti "-Ofast_ gcc" lc rgb 'orange','Vect_gcc_-O0.dat' using 2:xtic(2) ti "-O0_ gcc" lc rgb '#CC5500', 'Vect_gcc_-O1.dat' using 2:xtic(2) ti "-O1 gcc" lc rgb '#FFB347', 'Vect_gcc_-O2.dat' using 2:xtic(2) ti "-O2 gcc" lc rgb '#FFFF66', 'Vect_gcc_-O3.dat' using 2:xtic(2) ti "-O3 gcc" lc rgb '#FF4500', 'Vect_gcc_-Og.dat' using 2:xtic(2) ti "-Og gcc" lc rgb '#FF7F50', 'Vect_Clang_-Ofast.dat' using 2:xtic(2) ti "-Ofast clang" lc rgb '#000000','Vect_Clang_-O0.dat' using 2:xtic(2) ti "-O0 clang" lc rgb '#2F4F4F', 'Vect_Clang_-O1.dat' using 2:xtic(2) ti "-O1 clang" lc rgb '#777777', 'Vect_Clang_-O2.dat' using 2:xtic(2) ti "-O2 clang" lc rgb '#BBBBBB', 'Vect_Clang_-O3.dat' using 2:xtic(2) ti "-O3 clang" lc rgb '#333333', 'Vect_Clang_-Og.dat' using 2:xtic(2) ti "-Og clang" lc rgb '#f5f5f5#777777#000000'
 
 
 
