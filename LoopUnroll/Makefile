@@ -8,22 +8,22 @@ CC=gcc
 
 
 
-#CFLAGS=-Wall -g -Ofast
+CFLAGS=-Wall -g -Ofast
 #CFLAGS=-Wall -g -O0
 #CFLAGS=-Wall -g -O1
 #CFLAGS=-Wall -g -O2
 #CFLAGS=-Wall -g -O3
 #CFLAGS=-Wall -g -Og
 
-OFLAGS=-march=native-funroll-loops -Ofast -fopt-info-all=dist.gcc.optrpt
+OFLAGS=-march=native -Ofast -fopt-info-all=dist.gcc.optrpt
 
 #for Clang#
-#OFLAGS=-march=native-funroll-loops
+OFLAGS=-march=native
 
 all: genseq dist
 
 dist: dist_unrolling.c
-	$(CC) $(CFLAGS) $(OFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $(OFLAGS) -funroll-loops -funroll-all-loops  $< -o $@
 
 genseq: genseq.c
 	$(CC) -march=native $(CFLAGS) -Ofast $< -o $@
