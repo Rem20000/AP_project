@@ -1,5 +1,5 @@
 set terminal  pngcairo font  "Arial,12" fontscale 1.8 size 1400, 700
-set output 'Comparaison entre code initial et déroulé.jpg'
+set output 'Comparaison entre code initial et déroulé GCC.jpg'
 set style histogram cluster
 set boxwidth 0.8 
 set style fill  solid 0.9 border -1
