@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
-
+#include<omp.h>
 //Defining error codes
 #define ERR_FNAME_NULL   0
 #define ERR_MALLOC_NULL  1
